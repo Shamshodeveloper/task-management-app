@@ -1,0 +1,96 @@
+body{
+    background-color: #F9FAFB;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+main{
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    border-radius: 17px;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding-top: 70px;
+}
+.task-input{
+    width: 400px;
+    height: 30px;
+    border-radius: 7px;
+    border-color: transparent rgb(114, 129, 130),;
+}
+.task-input:active{
+    border-color: transparent rgb(114, 129, 130) sandybrown sandybrown;
+}
+h1{
+    color: #111827;
+}
+li{
+    color: #6B7280;
+}
+.add-task{
+    background-color: #2563EB;
+    color: #FFFFFF;
+    width: 70px;
+    border-radius: 7px;
+    cursor: pointer;
+    border-color: transparent;
+}
+.add-task:hover{
+    background-color: #1D4ED8;
+    transition: 0.2s ease-in-out;
+}
+.task-form{
+    display: flex;
+    gap: 12px;
+}
+
+.filters{
+    display: flex;
+    gap: 20px;
+}
+.active{
+    background: #2563EB;
+    color: #FFFFFF;
+    border: 1px solid #2563EB;
+}
+.filters button{
+    width: 85px;
+    height: 27px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #F3F4F6;
+    color: #374151;
+    border: 1px solid #D1D5DB
+}
+.filters button:hover{
+    background-color: #E5E7EB;
+    color: #111827;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+@media (max-width: 425px){
+ .task-input{
+    width: 270px;
+    height: 30px;
+    border-radius: 7px;
+    border-color: transparent rgb(114, 129, 130),;
+}
+}

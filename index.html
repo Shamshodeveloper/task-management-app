@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task management app</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header><h1>Task App</h1></header>
+    <main>
+        <section>
+            <form class="task-form">
+             <input type="text" class="task-input" placeholder="New task">
+             <button class="add-task">Add</button>
+            </form>
+        </section>
+        <section class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="done">Done</button>
+        </section>
+            <ul class="task-list">
+
+            </ul>
+    </main>
+    <script src="/js/app.js"></script>
+</body>
+</html>
