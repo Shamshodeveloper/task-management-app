@@ -61,11 +61,16 @@ li{
     gap: 20px;
 }
 .active{
+    width: 85px;
+    height: 27px;
+    border-radius: 7px;
+    cursor: pointer;
     background: #2563EB;
     color: #FFFFFF;
     border: 1px solid #2563EB;
 }
-.filters button{
+.filters .filter{
+
     width: 85px;
     height: 27px;
     border-radius: 7px;
@@ -74,14 +79,18 @@ li{
     color: #374151;
     border: 1px solid #D1D5DB
 }
-.filters button:hover{
+.filters .filter:hover{
     background-color: #E5E7EB;
     color: #111827;
     transition: 0.2s ease-in-out;
 }
-
-
-
+.hidden{
+    display: none;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
 
 
 
