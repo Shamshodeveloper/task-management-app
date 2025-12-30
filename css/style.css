@@ -28,7 +28,7 @@ main{
     width: 400px;
     height: 30px;
     border-radius: 7px;
-    border-color: transparent rgb(114, 129, 130),;
+    border: 1px solid rgb(114, 129, 130);
 }
 .task-input:active{
     border-color: transparent rgb(114, 129, 130) sandybrown sandybrown;
@@ -60,17 +60,13 @@ li{
     display: flex;
     gap: 20px;
 }
-.active{
-    width: 85px;
-    height: 27px;
-    border-radius: 7px;
-    cursor: pointer;
+.filters .filter.active{
     background: #2563EB;
     color: #FFFFFF;
     border: 1px solid #2563EB;
 }
-.filters .filter{
 
+.filter{
     width: 85px;
     height: 27px;
     border-radius: 7px;
@@ -79,7 +75,7 @@ li{
     color: #374151;
     border: 1px solid #D1D5DB
 }
-.filters .filter:hover{
+.filter:hover{
     background-color: #E5E7EB;
     color: #111827;
     transition: 0.2s ease-in-out;
@@ -87,17 +83,60 @@ li{
 .hidden{
     display: none;
 }
-.completed{
+.completed span{
     text-decoration: line-through;
     color: gray;
 }
+.task-list{
+  list-style: none;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+}
+.task-list li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  min-height: 52px;          
+  padding: 12px 14px;
+
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+
+  box-sizing: border-box;
+}
+
+.task-list li span{
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.4;
+
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.task-list li button{
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.task-list .actions{
+  display: flex;
+  gap: 6px;
+}
 
 
-
-
-@media (max-width: 425px){
+@media (max-width: 426px){
  .task-input{
-    width: 270px;
+    width: 240px;
     height: 30px;
     border-radius: 7px;
     border-color: transparent rgb(114, 129, 130),;
